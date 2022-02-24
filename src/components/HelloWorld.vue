@@ -6,7 +6,7 @@
     <div class="table">
       <el-table
           :data="tableData"
-          style="width: 100%"
+          style="width: 100%; font-size: 20px"
           :header-cell-style="{background:'#eef1f6',color:'#ffffff'}">
         <el-table-column
             label="id"
@@ -31,10 +31,12 @@
                 type="primary"
                 @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
 
-            <el-button
-                size="mini"
-                type="danger"
-                @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+<!--            <el-button-->
+<!--                size="mini"-->
+<!--                type="danger"-->
+<!--                @click="handleDelete(scope.$index, scope.row)">删除</el-button>-->
+
+
 
             <!-- 新增场站备注dialog -->
             <el-dialog title="添加新场站备注" :visible.sync="dialogFormVisible" :data="scope.row">

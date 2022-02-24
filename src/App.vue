@@ -1,26 +1,35 @@
 <template>
   <div class="container">
-    <div class="background">
-      <img class="bgIMG" src="@/assets/background.jpg">
-    </div>
-    <div class="global">
-      <page-header></page-header>
-      <div id="app">
-        <HelloWorld/>
-      </div>
+<!--    <div class="background">-->
+<!--      <img class="bgIMG" src="@/assets/background.jpg">-->
+<!--    </div>-->
+<!--    <div class="global">-->
+<!--      <page-header></page-header>-->
+<!--      <div id="app">-->
+<!--        <HelloWorld/>-->
+<!--&lt;!&ndash;        <Main/>&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+    <div>
+      <page-header/>
+      <MainPage/>
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import PageHeader from "@/components/header";
+import MainPage from "@/components/MainPage";
 import PageHeader from "@/components/header";
 
 export default {
   name: 'App',
   components: {
     PageHeader,
-    HelloWorld
+    // PageHeader,
+    // HelloWorld
+    MainPage
   }
 }
 </script>
